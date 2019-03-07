@@ -50,4 +50,5 @@ cd /app/vendor/geckodriver
 wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
 tar -xvzf geckodriver*
 chmod +x geckodriver
-export PATH=$PATH:/app/vendor/geckodriver/geckodriver
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib:/lib:/app/vendor/firefox
+export PATH=$PATH:/app/vendor/geckodriver/geckodriver:/usr/local/bin:/usr/bin:/bin:/app/vendor/firefox
